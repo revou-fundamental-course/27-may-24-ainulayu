@@ -1,11 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTS Fandom</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
-</body>
+    <nav>
+        <div class="logo-icon"></div>
+
+        <section>
+            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#member">Member</a>
+            <a class="nav-item" href="#support-massages">Support Messages</a>
+        </section>
+    </nav>
+
+    <hr>
+
+    <section class="section-container">
+        <!-- Home -->
+        <section id="home">
+            <header>
+                <h2>Hi <span id="yourname">ARMY</span>, welcome to BTS fanpage!</h2>
+            </header>
+
+            <article>
+                <p>This website is contribute to ARMY, the BTS fandom.</p>
+               
+                <div class="banner-container">
+                    <div class="banner-img" style="background-image: url(assets/BTS.jpg);"></div>
+                </div>
+            </article> 
+        </section>
+
+        <hr>
+
+            <!-- Member -->
+        <section id="member">
+            <header>
+                <h2>Member</h2>
+            </header>
+
+            <article class="member-list">
+                <div style="
+                    text-align: center;
+                    "> 
+                    <div class="logo-member1" style="background-image: url(assets/RM.jpg); "></div>
+                    <h5>RM</h5>
+                </div>
+
+                <div style="
+                    text-align: center;
+                    ">
+                    <div class="logo-member2" style="background-image: url(assets/JIN.jpg); "></div>
+                    <h5>JIN</h5>
+                </div>
+
+                <div style="
+                    text-align: center;
+                    ">
+                    <div class="logo-member3" style="background-image: url(assets/SUGA.jpg); "></div>
+                    <h5>SUGA</h5>
+                </div>
+
+                <div style="
+                    text-align: center;
+                    ">
+                    <div class="logo-member4" style="background-image: url(assets/JHOPE.jpg); "></div>
+                    <h5>J-HOPE</h5>
+                </div>
+
+                <div style="
+                    text-align: center;
+                    ">
+                    <div class="logo-member5" style="background-image: url(assets/JIMIN.jpg); "></div>
+                    <h5>JIMIN</h5>
+                </div>
+
+                <div style="
+                    text-align: center;
+                    ">
+                    <div class="logo-member6" style="background-image: url(assets/V.jpg); "></div>
+                    <h5>V</h5>
+                </div>
+
+                <div style="
+                    text-align: center;
+                    ">
+                    <div class="logo-member7" style="background-image: url(assets/JUNGKOOK.jpg); "></div>
+                    <h5>JK</h5>
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Support Messages -->
+        <section class="support-massages" id="support-massages">
+            <header>
+                <h2>Support Messages</h2>
+            </header>
+
+            <section class="support-message-section">
+                <!-- Form -->
+                <section class="form-container">
+                    <form id="formulir">
+                        <div class="form-group">
+                            <label>Name:</label>
+                            <input id="name-input" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob-input" class="">Date Of Birth:</label>
+                            <input type="date" id="dob-input" name="dob-input" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Bias:</label>
+                            <input type="radio" id="RM" name="bias-input" value="RM" />
+                            <label for="RM">RM</label>
+                            <input type="radio" id="JIN" name="bias-input" value="JIN" />
+                            <label for="JIN">JIN</label>
+                            <input type="radio" id="SUGA" name="bias-input" value="SUGA" />
+                            <label for="SUGA">SUGA</label>
+                            <input type="radio" id="J-HOPE" name="bias-input" value="J-HOPE" />
+                            <label for="J-HOPE">J-HOPE</label>
+                            <input type="radio" id="JIMIN" name="bias-input" value="JIMIN" />
+                            <label for="JIMIN">JIMIN</label>
+                            <input type="radio" id="V" name="bias-input" value="V" />
+                            <label for="V">V</label>
+                            <input type="radio" id="JK" name="bias-input" value="JK" />
+                            <label for="JK">JK</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Support Messages:</label>
+                            <textarea rows="4" style="width: 90%;" name="messages-input"></textarea>
+                        </div>
+                    
+                        <button type="button" onclick="formValidation()">Submit</button>
+                        <br />
+                    </form>
+                  
+                </section>
+
+                <!-- Result -->
+                <section class="result-container">
+                    <div class="form-result" id="show-result">
+                        <p><b>Your Messages<mark><span id="error-warning"></span></mark></b></p>
+                        <p>Name:<span id="name-input"></span></p>
+                        <p>Date Of Birth:<span id="dob-input"></span></p>
+                        <p>Bias:<span id="bias-input"></span></p>
+                        <p>Support Messages:<span id="messages-input"></span></p>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <footer>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>    
+
 </html>
